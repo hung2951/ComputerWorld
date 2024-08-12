@@ -18,7 +18,10 @@
 }
 /* logo */
 .fixed_top header .logo {
-  width: 200px;
+  width: 150px;
+}
+.fixed_top header .logo .logoMobile {
+  display: none;
 }
 /* form search */
 .fixed_top header .FormSearch {
@@ -39,6 +42,7 @@
   font-size: 15px;
   border: none;
   box-shadow: 0 0 15px rgba(63 143 186 / 55%);
+  padding-right: 40px;
 }
 .fixed_top header .FormSearch .searchInput input:focus {
   border-color: #337ab7;
@@ -63,6 +67,9 @@
   color: #337ab7;
 }
 /* navbar */
+.fixed_top header .menu__mobile {
+  display: none;
+}
 .fixed_top header nav {
   display: block;
 }
@@ -81,14 +88,94 @@
   color: #337ab7;
 }
 /* cart */
-.fixed_top header .cart,.fixed_top header .account{
-    width: 40px;
+.fixed_top header .cart,
+.fixed_top header .account {
+  width: 40px;
 }
-.fixed_top header .cart a svg,.fixed_top header .account svg{
+.fixed_top header .cart a svg,
+.fixed_top header .account svg {
+  color: #606060;
+  width: 40px;
+  cursor: pointer;
+}
+.fixed_top header .cart a svg:hover,
+.fixed_top header .account svg:hover {
+  color: #337ab7;
+}
+
+/* Reposive */
+/* max-width: 320px (điện thoại di động, hiển thị chiều dọc) */
+@media (max-width: 320px) {
+}
+/* max-width: 480px (điện thoại di động) */
+@media (max-width: 480px) {
+  .fixed_top header {
+    padding: 5px 0;
+    background: #fff;
+  }
+  .fixed_top header .menu__mobile {
+    display: block;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    bottom: 0;
+    z-index: 9999999;
     color: #606060;
-    width: 40px;
-    cursor: pointer;
+    color: #444;
+    font-weight: 500;
+  }
+  .fixed_top header .menu__mobile ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    box-shadow: 0 0 5px #888;
+  }
+  .fixed_top header .menu__mobile ul li a svg {
+    margin: 0 auto;
+  }
+  .fixed_top header .cart a svg,
+  .fixed_top header .account svg {
+    width: 30px;
+  }
+
+  .fixed_top header .FormSearch {
+    width: 200px;
+    margin-right: 10px;
+  }
+  .fixed_top header .FormSearch .searchInput input {
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(63 143 186 / 55%);
+  }
 }
-.fixed_top header .cart a svg:hover,.fixed_top header .account svg:hover{
-    color: #337ab7;
+/* max-width: 600px (máy tính bảng, hiển thị chiều dọc)*/
+@media (max-width: 600px) {
+}
+/* max-width: 800px (máy tính bảng, hiển thị chiều ngang) */
+@media (max-width: 800px) {
+}
+/* max-width: 768px (máy tính bảng loại to, hiển thị chiều dọc)*/
+@media (max-width: 768px) {
+}
+/* max-width: 1024px (máy tính bảng loại to, hiển thị chiều ngang) */
+@media (max-width: 1024px) {
+  .fixed_top header .logo {
+    width: 80px;
+  }
+  .fixed_top header .logo .logoMobile {
+    display: block;
+  }
+  .fixed_top header .logo .logoDesk,
+  .fixed_top header nav {
+    display: none;
+  }
+  .fixed_top header .header {
+    width: 100%;
+  }
+  .fixed_top header .header {
+    gap: 10px;
+  }
+}
+/* min-width: 1025px (từ size này trở lên là danh cho desktop thông thường).*/
+@media (min-width: 1025px) {
 }
