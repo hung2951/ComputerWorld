@@ -1,4 +1,4 @@
-.home__container{
+.home__container {
   margin-top: 140px;
 }
 .home__wrapper {
@@ -8,10 +8,16 @@
 }
 .home__title {
   text-align: center;
-  margin: 30px 0;
+  margin: 30px auto;
   font-size: 20px;
-  width: 100%;
-  padding: 0 10px;
+  width: 1220px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Courier New", Courier, monospace;
+  /* border-right: solid 10px green; */
+  font-size: 23px;
+  animation: type-text forwards 5s;
+  animation-timing-function: steps(60);
 }
 .home__title span {
   color: #337ab7;
@@ -31,6 +37,15 @@
 .home__wrapper .banner__left {
   width: 60%;
 }
+@keyframes type-text {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
 /* Reposive */
 /* max-width: 320px (điện thoại di động, hiển thị chiều dọc) */
 @media (max-width: 320px) {
@@ -38,15 +53,18 @@
 
 /* max-width: 480px (điện thoại di động) */
 @media (max-width: 480px) {
-  .home__container{
+  .home__container {
     margin-top: 110px;
   }
-  .home__wrapper {
+  .home__wrapper,.home__title {
     padding: 0 10px;
   }
   .home__wrapper .banner__left {
     width: 100%;
   }
+    .home__title{
+      font-size: 16px;
+    }
 }
 
 /* max-width: 600px (máy tính bảng, hiển thị chiều dọc)*/
@@ -63,7 +81,8 @@
 
 /* max-width: 1024px (máy tính bảng loại to, hiển thị chiều ngang) */
 @media (max-width: 1024px) {
-  .home__container .home__wrapper {
+  .home__container .home__wrapper,
+  .home__title {
     width: 100%;
   }
 }

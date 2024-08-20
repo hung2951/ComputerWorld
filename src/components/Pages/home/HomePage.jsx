@@ -53,7 +53,7 @@ const HomePage = () => {
   return (
     <div className={`${styles.home__container} min-h-screen`}>
       <div className={styles.home__title}>
-        <marquee direction="6000">Chào mừng bạn đến với <span>Computer World</span> !</marquee>
+        Chào mừng bạn đến với <span>Computer World</span> !
       </div>
       <div className={styles.home__wrapper}>
         <div className={styles.banner__left}>
