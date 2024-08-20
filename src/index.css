@@ -9,11 +9,6 @@
   background-size: cover;
   height: 350px;
 }
-@media (max-width: 480px) {
-  .each-slide-effect a div {
-      height: 200px;
-    }
-}
 .react-slideshow-container {
   overflow: hidden;
   border-radius: 20px;
@@ -26,4 +21,10 @@
 }
 .indicators .active {
   background: #337ab7;
+}
+/* reponsive */
+@media (max-width: 480px) {
+  .each-slide-effect a div {
+    height: 200px;
+  }
 }

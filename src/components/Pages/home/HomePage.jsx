@@ -56,24 +56,136 @@ const HomePage = () => {
         Chào mừng bạn đến với <span>Computer World</span> !
       </div>
       <div className={styles.home__wrapper}>
-        <div className={styles.banner__left}>
-          <Slide {...properties} indicators={indicators}>
-            {images.map((item, index) => (
-              <div className="each-slide-effect">
-                <NavLink to="#">
-                  <div
-                    style={{
-                      backgroundImage: `url(${item})`,
-                      borderRadius: "20px",
-                    }}
-                  >
-                  </div>
-                </NavLink>
-              </div>
-            ))}
-          </Slide>
+        <div className={styles.home__banner}>
+          <div className={styles.banner__left}>
+            <Slide {...properties} indicators={indicators}>
+              {images.map((item, index) => (
+                <div className="each-slide-effect">
+                  <NavLink to="#">
+                    <div
+                      style={{
+                        backgroundImage: `url(${item})`,
+                        borderRadius: "20px",
+                      }}
+                    ></div>
+                  </NavLink>
+                </div>
+              ))}
+            </Slide>
+          </div>
+          <div className={styles.banner__right}>
+            <div className={styles.banner____right__sub1}>
+              <NavLink to="#">
+                <img
+                  src="https://laptop88.vn/media/banner/31_Jul756ed2b4cb3d8e2d5d96308e0e5647db.jpg"
+                  alt=""
+                />
+              </NavLink>
+            </div>
+            <div className={styles.banner____right__sub2}>
+              <NavLink to="#">
+                <img
+                  src="https://laptop88.vn/media/banner/31_May1d61c0dcaafb8588e929cdbd5ace0101.jpg"
+                  alt=""
+                />
+              </NavLink>
+            </div>
+          </div>
+          <div className={styles.home__banner__sub}>
+            <div className={styles.home__banner__sub__img1}>
+              <NavLink to="#">
+                <img
+                  src="https://laptop88.vn/media/banner/31_Jul34c3f1c53320e2f51d2f8832b6b46e4c.jpg"
+                  alt=""
+                />
+              </NavLink>
+            </div>
+            <div className={styles.home__banner__sub__img2}>
+              <NavLink to="#">
+                <img
+                  src="https://laptop88.vn/media/banner/31_Julc74c45af4e38f562a364e61fb5e6274c.jpg"
+                  alt=""
+                />
+              </NavLink>
+            </div>
+            <div className={styles.home__banner__sub__img2}>
+              <NavLink to="#">
+                <img
+                  src="https://laptop88.vn/media/banner/31_Jul7558d20659a7ef907d2818eeb7aa849e.jpg"
+                  alt=""
+                />
+              </NavLink>
+            </div>
+          </div>
         </div>
-        <div className="banner__right"></div>
+        <div className={styles.categories__mobile}>
+          <div className={styles.category__mobile}>
+            <NavLink to="#">
+              <p>
+                <img
+                  src="https://trungtran.vn/images/menus/_0000_laptop-icon.jpg"
+                  alt=""
+                />
+              </p>
+              <span>Laptop</span>
+            </NavLink>
+          </div>
+          <div className={styles.category__mobile}>
+            <NavLink to="#">
+              <p>
+                <img
+                  src="https://trungtran.vn/images/menus/_0000_laptop-icon.jpg"
+                  alt=""
+                />
+              </p>
+              <span>Laptop</span>
+            </NavLink>
+          </div>
+          <div className={styles.category__mobile}>
+            <NavLink to="#">
+              <p>
+                <img
+                  src="https://trungtran.vn/images/menus/_0000_laptop-icon.jpg"
+                  alt=""
+                />
+              </p>
+              <span>Laptop</span>
+            </NavLink>
+          </div>
+          <div className={styles.category__mobile}>
+            <NavLink to="#">
+              <p>
+                <img
+                  src="https://trungtran.vn/images/menus/_0000_laptop-icon.jpg"
+                  alt=""
+                />
+              </p>
+              <span>Laptop</span>
+            </NavLink>
+          </div>
+          <div className={styles.category__mobile}>
+            <NavLink to="#">
+              <p>
+                <img
+                  src="https://trungtran.vn/images/menus/_0000_laptop-icon.jpg"
+                  alt=""
+                />
+              </p>
+              <span>Laptop</span>
+            </NavLink>
+          </div>
+          <div className={styles.category__mobile}>
+            <NavLink to="#">
+              <p>
+                <img
+                  src="https://trungtran.vn/images/menus/_0000_laptop-icon.jpg"
+                  alt=""
+                />
+              </p>
+              <span>Laptop</span>
+            </NavLink>
+          </div>
+        </div>
       </div>
     </div>
   );
